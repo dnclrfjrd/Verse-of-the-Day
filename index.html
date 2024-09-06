@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <title>Verse of the Day</title>
+</head>
+    <style>
+        body {
+            background-image: url(https://img.freepik.com/premium-photo/open-bible-with-sunlights_118124-39542.jpg?w=826);
+            background-size: cover;
+        }
+
+        input {
+            background-color:aliceblue;
+            border-radius: 10px;
+            height: 50px;
+            padding: 10px;
+        }
+
+        input:hover {
+            background-color: rgb(47, 111, 230);
+            color: white;
+        }
+
+        h1 {
+            margin-top: 200px;
+            font-family: 'Satisfy', cursive;
+            font-size: 150px;
+            color: white;
+        }
+
+    </style>
+<body>
+    <center><h1>Verse of the Day</h1></center>
+    <center>
+        <input type="button" onclick="hi()" value="Open">
+        <input type="button" onclick="annyeong()" value="Matthew 11:28">
+        <input type="button" onclick="close()"value="Close">
+    </center>
+    <script>
+        let myWindow;
+
+        function hi() {
+            myWindow = window.open("","","width=650, height=650");   
+            myWindow.document.write("I hope this will encourage you.")
+        }
+        function annyeong() {
+            myWindow.focus()
+            myWindow.location.replace("https://pbs.twimg.com/media/DUu2o40X4AUvpZs?format=jpg&name=medium");
+        }
+        function close() {
+            myWindow.close()
+        }
+    </script>
+    
+</body>
+</html>
